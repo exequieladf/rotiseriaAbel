@@ -103,7 +103,7 @@ header {
 }
 
 .home-text p{
-    font-size: 0.938rem;
+    font-size: 17px;
     color: var(--text-color);
     margin: 0.5rem 0 1.4rem;
 }
@@ -254,4 +254,8 @@ header {
 .customers-container .box:hover{
     background: var(--second-color);
     transition: 0.2s all linear;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
 }
