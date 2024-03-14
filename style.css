@@ -47,7 +47,12 @@ header {
     align-items: center;
     padding: 18px 100px;
     transition: 0.5s linear;
-    background-color: var(--navbar-color);
+    background-color: none;
+}
+
+header.shadow {
+    background: var(--navbar-color);
+    box-shadow: var(--box-shadow);
 }
 
 .logo p {
@@ -60,7 +65,7 @@ header {
 
 .navbar a {
     padding: 8px 17px;
-    color:  var(--bg-color);
+    color:  var(--text-color);
     font-size: 1rem;
     text-transform: uppercase;
     font-weight: 500;
@@ -252,10 +257,70 @@ header {
 }
 
 .customers-container .box:hover{
-    background: var(--second-color);
+    background: var(--navbar-color);
     transition: 0.2s all linear;
 }
 .footer{
     display: flex;
     justify-content: space-between;
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    background: var(--navbar-color);
+}
+
+@media (max-width:1058){
+    header{
+        padding: 18px 60px;
+    }
+    section {
+        padding: 50px 60px;
+    }
+    .home-text h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width:991px){
+    header{
+        padding: 18px 4%;
+    }
+    section {
+        padding: 50px 4%px;
+    }
+    .home-text h1 {
+        font-size: 2rem;
+    }
+}
+@media (max-width:768px){
+    header{
+        padding: 12px 4%;
+    }
+    #menu-icon {
+        display: initial;
+    }
+    .navbar {
+        position: absolute;
+        top: -570px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--navbar-color);
+        row-gap: 1.4rem;
+        padding: 20px;
+        transition: 0.3s;
+        text-align: center;
+    }
+    .navbar a{
+        color: var(--text-color);
+    }
+    .navbar a:hover{
+        color: var(--hover-navbar-color);
+    }
+    .navbar.active{
+        top: 100%;
+    }
 }
