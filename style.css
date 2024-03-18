@@ -34,6 +34,7 @@ img{
 
 body {
     color: var(--text-color);
+    
 }
 
 header {
@@ -265,11 +266,17 @@ header.shadow {
     justify-content: space-between;
 }
 
+.MAPA iframe {
+    width: auto;
+}
+
 .copyright {
+
     padding: 20px;
     text-align: center;
     background: var(--navbar-color);
 }
+
 
 @media (max-width:1058){
     header{
@@ -323,4 +330,49 @@ header.shadow {
     .navbar.active{
         top: 100%;
     }
+    .about{
+        align-items: center;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:360px){
+header{
+    padding: 11px 4%;
+}
+.logo img {
+    width: 45px;
+}
+.home-text {
+    padding-top: 15px;
+}
+.home h1{
+    font-size: 1.4rem;
+}
+.home text p {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+.about-img{
+    order: 2;
+}
+.about-text{
+    text-align: center;
+}
+.about-text h2{
+    font-size: 1.2rem;
+}
+.heading h2{
+    font-size: 1.2rem;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.MAPA iframe {
+    width: 200px;
+}
 }
