@@ -261,6 +261,7 @@ header.shadow {
     background: var(--navbar-color);
     transition: 0.2s all linear;
 }
+
 .footer{
     display: flex;
     justify-content: space-between;
