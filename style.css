@@ -175,6 +175,12 @@ header.shadow {
     justify-content: center;
     border-radius: 0.5rem;
     box-shadow: var(--box-shadow);
+    
+}
+
+.products-container .box p {
+    text-align: center;
+
 }
 
 .products-container img {
@@ -271,6 +277,21 @@ header.shadow {
     width: auto;
 }
 
+.social a .bx.bxl-facebook {
+    font-size: 30px;
+    color: #3b5998; /* Color azul de Facebook */
+  }
+  
+  .social a .bx.bxl-instagram {
+    font-size: 30px;
+    color: #e4405f; /* Color rosa de Instagram */
+  }
+  
+  .social a .bx.bxl-whatsapp {
+    font-size: 30px;
+    color: #25d366; /* Color verde de Whatsapp */
+  }
+
 .copyright {
 
     padding: 20px;
@@ -280,100 +301,123 @@ header.shadow {
 
 
 @media (max-width:1058){
-    header{
-        padding: 18px 60px;
-    }
-    section {
-        padding: 50px 60px;
-    }
+    header {
+        padding: 12px 4%;
+      }
+      section {
+        padding: 50px 4%;
+      }
     .home-text h1 {
         font-size: 2.4rem;
     }
 }
 
-@media (max-width:991px){
-    header{
-        padding: 18px 4%;
+@media (max-width: 360px) {
+    header {
+      padding: 11px 4%;
     }
-    section {
-        padding: 50px 4%px;
+    .logo img {
+      width: 45px;
     }
-    .home-text h1 {
-        font-size: 2rem;
+    .home-text {
+      padding-top: 15px;
     }
-}
-@media (max-width:768px){
-    header{
-        padding: 12px 4%;
+    .home h1 {
+      font-size: 1.4rem;
     }
-    #menu-icon {
-        display: initial;
+    .home-text p {
+      font-size: 0.8rem;
+      font-weight: 300;
     }
-    .navbar {
-        position: absolute;
-        top: -570px;
-        left: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        background-color: var(--navbar-color);
-        row-gap: 1.4rem;
-        padding: 20px;
-        transition: 0.3s;
-        text-align: center;
+    .about-img {
+      order: 2;
     }
-    .navbar a{
-        color: var(--text-color);
+    .about-text {
+      text-align: center;
     }
-    .navbar a:hover{
-        color: var(--hover-navbar-color);
+    .about-text h2 {
+      font-size: 1.2rem;
     }
-    .navbar.active{
-        top: 100%;
-    }
-    .about{
-        align-items: center;
+    .heading h2 {
+      font-size: 1.2rem;
     }
     .footer {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
-}
-
-@media (max-width:360px){
-header{
-    padding: 11px 4%;
-}
-.logo img {
-    width: 45px;
-}
-.home-text {
-    padding-top: 15px;
-}
-.home h1{
-    font-size: 1.4rem;
-}
-.home text p {
-    font-size: 0.8rem;
-    font-weight: 300;
-}
-.about-img{
-    order: 2;
-}
-.about-text{
-    text-align: center;
-}
-.about-text h2{
-    font-size: 1.2rem;
-}
-.heading h2{
-    font-size: 1.2rem;
-}
-.footer{
-    display: flex;
-    flex-direction: column;
-}
-.MAPA iframe {
-    width: 200px;
-}
-}
+    .MAPA iframe {
+      width: 200px;
+    }
+  }
+  
+  /* Ajustes para tarjetas de productos */
+  @media (max-width: 480px) {
+    .products-container .box {
+      padding: 15px; /* Aumentar el espacio interior */
+    }
+    .products-container img {
+      height: auto; /* Altura automática para mantener la proporción */
+    }
+  }
+  
+  /* Ajustes para navegación */
+  @media (max-width: 768px) {
+    #menu-icon {
+      display: initial;
+    }
+    .navbar {
+      position: absolute;
+      top: -570px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--navbar-color);
+      row-gap: 1.4rem;
+      padding: 20px;
+      transition: 0.3s;
+      text-align: center;
+    }
+    .navbar a {
+      color: var(--text-color);
+    }
+    .navbar a:hover {
+      color: var(--hover-navbar-color);
+    }
+    .navbar.active {
+      top: 100%;
+    }
+    .about {
+      align-items: center;
+    }
+    .footer {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  /* Ajustes para imagen de fondo */
+  @media (max-width: 1058px) {
+    header {
+      padding: 18px 60px;
+    }
+    section {
+      padding: 50px 60px;
+    }
+    .home-text h1 {
+      font-size: 2.4rem;
+    }
+  }
+  
+  /* Ajustes para menú */
+  @media (max-width: 991px) {
+    header {
+      padding: 18px 4%;
+    }
+    section {
+      padding: 50px 4%;
+    }
+    .home-text h1 {
+      font-size: 2rem;
+    }
+  }
